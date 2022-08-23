@@ -1,22 +1,38 @@
 <script>
     //vamos fazer dois loopings if else para comparação e exibição do maior e menor
-    n_1=+prompt("insira");
-    n_2=+prompt("insira");
+    n_1=+prompt("insert number");
+    n_2=+prompt("insert number");
+    n_3=+prompt("insert number");
+    let largest;
+    let smallest;
 
    
-    if((n_1>n_2)&& (n_2 > n_3)){
-        alert("o maior numero é n_1");
-
-    }else{
-        alert("mensagem1");
+    if(n_1 >= n_2 && n_1 >= n_3){
+        largest = n_1
 
     }
-    if((n_2>n_1)&& (n_2 > n_1)){
-        alert("o maior numero é n_2");
-
-    }else{
-        alert("mensagem2");
+    else if (n_2 >= n_1 && n_2 >= n_3) {
+        largest = n_2
 
     }
+    else {
+        largest = n_3
+        
+    }
+alert("largest number is :" + largest)
+    
+if(n_1 <= n_2 && n_1 <= n_3){
+        smallest = n_1
+
+    }
+    else if (n_2 <= n_1 && n_2 <= n_3) {
+        smallest= n_2
+
+    }
+    else {
+        smallest= n_3
+        
+    }
+alert("smallest number is :" + smallest)
     
 </script>
