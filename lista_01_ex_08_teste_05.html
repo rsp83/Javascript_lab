@@ -1,0 +1,133 @@
+<script>
+    //vamos fazer dois loopings if else para comparação e exibição do maior e menor ; 
+    //o primeiro esta feito para a idade, para rodar o segundo apos o primeiro preciso colocar ele dentro de uma função. ; sim criei a função ageOmeter
+    //vou copiar e colar esse looping para o segundo looping
+    // tenho que adaptar para que funcione com cinco variaveis em vez de 3 : DONE
+    // tenho que adaptar para que funcione com altura e idade. idade é basicamente a mesma coisa farei essa adaptação primeiro. : doing : DONE
+    // para altura tenho que adaptar para que tipo de numero ?  : não preciso adaptar apenas especificar pro usuario usar um . para separar metro de centimetros em vez de ,
+    // https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercise-4.php
+    
+    function ageOmeter (){
+    
+        n_1=+prompt("insert someones age");
+        n_2=+prompt("insert someones age");
+        n_3=+prompt("insert someones age");
+        n_4=+prompt("insert someones age");
+        n_5=+prompt("insert someones age");
+        let largest;
+        let smallest;
+    
+       
+        if(n_1 >= n_2 && n_1 >= n_3 && n_1 >= n_4 && n_1 >= n_5){
+            
+            largest = n_1
+    
+        }
+        else if (n_2 >= n_1 && n_2 >= n_3 && n_2 >= n_4 && n_2 >= n_5) {
+    
+            largest = n_2
+    
+        }
+        else if (n_3 >= n_1 && n_3 >= n_2 && n_3 >= n_4 && n_3 >= n_5) {
+            largest = n_3
+            
+        }
+    // adaptar pro n_4 : done
+        else if (n_4 >= n_1 && n_4 >= n_2 && n_4 >= n_3 && n_4 >= n_5) {
+            largest = n_4
+            
+        }
+    // adaptar pro n_5 : done 
+        else if (n_5 >= n_1 && n_5 >= n_2 && n_5 >= n_3 && n_5 >= n_4) {
+            largest = n_5
+            
+        }
+    alert("The oldest person has age equal : " + largest)
+        
+        if(n_1 <= n_2 && n_1 <= n_3 && n_1 <= n_4 && n_1 <= n_5){
+            smallest = n_1
+    
+        }
+        else if (n_2 <= n_1 && n_2 <= n_3 && n_2 <= n_4 && n_2 <= n_5) {
+            smallest= n_2
+    
+        }
+        else if (n_3 <= n_1 && n_3 <= n_2 && n_3 <= n_4 && n_3 <= n_5) {
+            smallest= n_3
+            
+        }
+        else if (n_4 <= n_1 && n_4 <= n_2 && n_4 <= n_3 && n_4 <= n_5) {
+            smallest= n_4
+            
+        }
+        else if (n_5 <= n_1 && n_5 <= n_2 && n_5 <= n_3 && n_5 <= n_4) {
+            smallest= n_5
+            
+        }
+        
+    alert("the youngest person has age equal : " + smallest)
+    }
+    ageOmeter()
+
+    function heightOmeter (){
+    
+    n_1=+prompt("insert someones height using a . to separete meters from centimeters instead of a , like this exemple: 1.70 ");
+    n_2=+prompt("insert someones height using a . to separete meters from centimeters instead of a , like this exemple: 1.70 ");
+    n_3=+prompt("insert someones height using a . to separete meters from centimeters instead of a , like this exemple: 1.70 ");
+    n_4=+prompt("insert someones height using a . to separete meters from centimeters instead of a , like this exemple: 1.70 ");
+    n_5=+prompt("insert someones height using a . to separete meters from centimeters instead of a , like this exemple: 1.70 ");
+    let largest;
+    let smallest;
+
+   
+    if(n_1 >= n_2 && n_1 >= n_3 && n_1 >= n_4 && n_1 >= n_5){
+        
+        largest = n_1
+
+    }
+    else if (n_2 >= n_1 && n_2 >= n_3 && n_2 >= n_4 && n_2 >= n_5) {
+
+        largest = n_2
+
+    }
+    else if (n_3 >= n_1 && n_3 >= n_2 && n_3 >= n_4 && n_3 >= n_5) {
+        largest = n_3
+        
+    }
+// adaptar pro n_4 : done
+    else if (n_4 >= n_1 && n_4 >= n_2 && n_4 >= n_3 && n_4 >= n_5) {
+        largest = n_4
+        
+    }
+// adaptar pro n_5 : done 
+    else if (n_5 >= n_1 && n_5 >= n_2 && n_5 >= n_3 && n_5 >= n_4) {
+        largest = n_5
+        
+    }
+alert("The tallest person has height equal : " + largest )
+    
+    if(n_1 <= n_2 && n_1 <= n_3 && n_1 <= n_4 && n_1 <= n_5){
+        smallest = n_1
+
+    }
+    else if (n_2 <= n_1 && n_2 <= n_3 && n_2 <= n_4 && n_2 <= n_5) {
+        smallest= n_2
+
+    }
+    else if (n_3 <= n_1 && n_3 <= n_2 && n_3 <= n_4 && n_3 <= n_5) {
+        smallest= n_3
+        
+    }
+    else if (n_4 <= n_1 && n_4 <= n_2 && n_4 <= n_3 && n_4 <= n_5) {
+        smallest= n_4
+        
+    }
+    else if (n_5 <= n_1 && n_5 <= n_2 && n_5 <= n_3 && n_5 <= n_4) {
+        smallest= n_5
+        
+    }
+    
+alert("the shortest person has height equal : " + smallest )
+}
+heightOmeter()
+    </script>
