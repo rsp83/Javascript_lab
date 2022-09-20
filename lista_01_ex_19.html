@@ -1,0 +1,17 @@
+<script>
+    var num1 =+ prompt("digite o primeiro numero");
+    var num2 =+ prompt("digite o segundo numero");
+    var num3 =+ prompt("digite o terceiro numero");
+    var numArray = [num1, num2, num3];
+numArray.sort(function(a, b) {
+  if( a === Infinity ) 
+    return 1; 
+  else if( isNaN(a)) 
+    return -1;
+  else 
+    return a - b;
+});
+
+console.log(numArray);
+//font ; https://stackoverflow.com/questions/1063007/how-to-sort-an-array-of-integers-correctly
+</script>
