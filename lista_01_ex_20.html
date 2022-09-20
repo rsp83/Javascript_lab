@@ -1,0 +1,56 @@
+<script>
+    /*
+20 - Para n alunos de uma determinada classe são dadas as 3 notas das provas.
+Calcular a média aritmética das provas de cada aluno, a média da classe,
+o número de aprovados e o número de reprovados
+(critério de aprovação: média maior ou igual a cinco).
+*/
+
+
+    //var notas = [[1,1], [2,2]];
+/*
+20 - Para n alunos de uma determinada classe são dadas as 3 notas das provas.
+Calcular a média aritmética das provas de cada aluno, a média da classe,
+o número de aprovados e o número de reprovados
+(critério de aprovação: média maior ou igual a cinco).
+*/
+
+var numeroAlunos;
+var notas1 = [];
+var notas2 = [];
+var notas3 = [];
+var mediasAlunos = [];
+var mediaTodosAlunos = 0;
+var aprovados = 0;
+var reprovados = 0;
+
+numeroAlunos = +prompt("Digite o número de alunos da sua classe");
+
+for(var i=0; i<numeroAlunos; i++){
+    notas1[i] = +prompt("Digite a primeira nota do aluno numero: "+i);
+    notas2[i] = +prompt("Digite a segunda nota do aluno numero: "+i);
+    notas3[i] = +prompt("Digite a terceira nota do aluno numero: "+i);
+    mediasAlunos[i] = (notas1[i]+notas2[i]+notas3[i])/3;
+    if(mediasAlunos[i] >= 5){
+        aprovados = aprovados + 1;
+    }else{
+        reprovados = reprovados + 1;
+    }
+
+    mediaTodosAlunos = mediaTodosAlunos+mediasAlunos[i];
+   
+}
+console.log("A media geral da turma foi de:")
+console.log(mediaTodosAlunos/numeroAlunos);
+console.log("O numero de aprovados foi de:");
+console.log(aprovados);
+console.log("O numero de reprovados foi de:");
+console.log(reprovados);
+
+//console.log()
+//console.log(notas2);
+//console.log(notas3);
+
+//console.log(notas[1]);
+
+</script>
