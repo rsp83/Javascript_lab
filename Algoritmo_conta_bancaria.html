@@ -1,0 +1,62 @@
+<script>
+    
+    var usuario1 = "Joao Alberto";
+    var usuario2 = "Francisco Magalhaes";
+    var usuario3 = "Amanda Albuquerque";
+    //senha do usuário numero 1 é a variável senha1
+    var senha1 = "ja1234";
+    var senha2 = "fm1234";
+    var senha3 = "aa12340";
+    var usuarioExiste = 0;
+    var solicitaUsuario;
+    var auxSenha = 0;
+    var auxSenhaCerta = 0;
+    var solicitaSenha;
+    var usuarioLogado = 0;
+
+    while(usuarioExiste == 0){
+        verificarUsuario();
+    }
+    function verificarUsuario(){
+        solicitaUsuario = prompt("Digite o seu usuario:");
+        switch(solicitaUsuario){
+            case usuario1:
+                auxSenha = 1;
+                usuarioExiste = 1;
+                console.log(usuarioExiste);
+                break;
+            case usuario2:
+                auxSenha = 2;
+                usuarioExiste = 1;
+                break;
+            case usuario3:
+                auxSenha = 3;
+                usuarioExiste = 1;
+                break;
+            
+        }
+    }
+
+    while(auxSenhaCerta == 0){
+        solicitaSenha = prompt("Digite sua senha:");
+        if(auxSenha == 1){
+            if(solicitaSenha == senha1){
+                alert("usuario logado com sucesso");
+                auxSenhaCerta = 1;
+                usuarioLogado = 1;
+
+            }
+            else{
+                alert("Senha incorreta");
+            }
+        }
+    }   
+
+    if(usuarioLogado == 1){
+        prompt("Digite o que deseja fazer: \n 1) Ver saldo \n 2)Depositar \n 3) Sacar")
+    }
+    
+    // somente um sinal de = é caso de atribuição
+    // a utilização de dois sinais de == (==) é caso de comparação
+
+</script>
